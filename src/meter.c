@@ -72,7 +72,7 @@ static void send_to_pipe(int left_ch, int right_ch)
         return;
     }
     unsigned int stereo = left_ch + (right_ch << 16);
-    write(fifo_fd, &stereo, sizeof(stereo));
+    (void)write(fifo_fd, &stereo, sizeof(stereo));
 }
 
 static void clean_pipe()
