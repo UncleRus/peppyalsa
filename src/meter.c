@@ -40,10 +40,10 @@ static char *mypipe;
 static int fifo_fd = -1;
 static int meter_max;
 static int meter_show = 0;
-static char *left =  "L: ";
-static char *right = "R: ";
+//static char *left =  "L: ";
+//static char *right = "R: ";
 
-#define LINE_LENGTH 76
+//#define LINE_LENGTH 76
 
 static void open_pipe()
 {
@@ -117,6 +117,8 @@ static int init(const char *name, int max, int show, int size, int log_f, int lo
 
 static void update(int meter_level_l, int meter_level_r, snd_pcm_scope_peppyalsa_t *level)
 {
+    (void)level;
+
     if (fifo_fd == -1)
     {
         open_pipe();

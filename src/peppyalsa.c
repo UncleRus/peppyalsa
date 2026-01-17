@@ -86,6 +86,7 @@ static void level_start(snd_pcm_scope_t * scope ATTRIBUTE_UNUSED)
 
 static void level_stop(snd_pcm_scope_t *scope)
 {
+    (void)scope;
 }
 
 static int get_channel_level(
