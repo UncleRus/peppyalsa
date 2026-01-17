@@ -18,3 +18,7 @@ src/.libs/
 src/.dirstamp
 configure~
 
+config.log
+config.status
+libtool
+Makefile
