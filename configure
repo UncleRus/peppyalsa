@@ -700,6 +700,7 @@ build_vendor
 build_cpu
 build
 LIBTOOL
+AM_CFLAGS
 am__xargs_n
 am__rm_f_notfound
 AM_BACKSLASH
@@ -3417,6 +3418,9 @@ fi
 
 
 
+
+
+AM_CFLAGS="$AM_CFLAGS -Wno-unused-result"
 
 
 case `pwd` in

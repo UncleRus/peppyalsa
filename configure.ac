@@ -3,6 +3,9 @@ AC_CONFIG_SRCDIR([src/peppyalsa.c])
 AM_INIT_AUTOMAKE([subdir-objects])
 AC_CONFIG_MACRO_DIR([m4])
 
+AM_CFLAGS="$AM_CFLAGS -Wno-unused-result"
+AC_SUBST([AM_CFLAGS])
+
 LT_INIT
 
 AC_PROG_CC
