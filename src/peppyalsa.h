@@ -1,6 +1,6 @@
 /*
 * Copyright 2018-2021 Peppy ALSA Plugin peppy.player@gmail.com
-* 
+*
 * This file is the part of the Peppy ALSA Plugin project.
 *
 * The changes in the Spectrum Analyzer code.
@@ -16,18 +16,18 @@
 *   Copyright (c) 2001 by Abramo Bagnara <abramo@alsa-project.org>
 *   Copyright (c) 2002 by Steve Harris <steve@plugin.org.uk>
 *
-* Peppy ALSA Plugin is free software: you can redistribute it and/or 
-* modify it under the terms of the GNU General Public License as 
-* published by the Free Software Foundation, either version 3 of the 
+* Peppy ALSA Plugin is free software: you can redistribute it and/or
+* modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
 * License, or (at your option) any later version.
-* 
+*
 * Peppy ALSA Plugin is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-* 
+*
 * You should have received a copy of the GNU General Public License
-* along with Peppy ALSA Plugin. If not, see 
+* along with Peppy ALSA Plugin. If not, see
 * <http://www.gnu.org/licenses/>.
 */
 
@@ -36,20 +36,23 @@
 
 #include <alsa/asoundlib.h>
 
-typedef struct _snd_pcm_scope_peppyalsa_channel {
-  int16_t levelchan;
+typedef struct _snd_pcm_scope_peppyalsa_channel
+{
+    int16_t levelchan;
 } snd_pcm_scope_peppyalsa_channel_t;
 
-typedef struct _snd_pcm_scope_peppyalsa {
-  snd_pcm_t *pcm;
-  snd_pcm_scope_t *s16;
-  snd_pcm_scope_peppyalsa_channel_t *channels;
-  snd_pcm_uframes_t old;
-  unsigned int decay_ms;
+typedef struct _snd_pcm_scope_peppyalsa
+{
+    snd_pcm_t *pcm;
+    snd_pcm_scope_t *s16;
+    snd_pcm_scope_peppyalsa_channel_t *channels;
+    snd_pcm_uframes_t old;
+    unsigned int decay_ms;
 } snd_pcm_scope_peppyalsa_t;
 
-typedef struct device {
-	int (*init)(const char *name, int max, int show, int size, int log_f, int log_y, int smooth_f, int window);
-	void (*update)(int left, int right, snd_pcm_scope_peppyalsa_t *level);
+typedef struct device
+{
+    int (*init)(const char *name, int max, int show, int size, int log_f, int log_y, int smooth_f, int window);
+    void (*update)(int left, int right, snd_pcm_scope_peppyalsa_t *level);
 } device;
 #endif

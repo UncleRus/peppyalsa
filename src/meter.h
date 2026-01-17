@@ -1,6 +1,6 @@
 /*
 * Copyright 2018 Peppy ALSA Plugin peppy.player@gmail.com
-* 
+*
 * This file is the part of the Peppy ALSA Plugin project.
 *
 * The Peppy ALSA Plugin project was derived from the project 'pivumeter'
@@ -13,18 +13,18 @@
 *   Copyright (c) 2001 by Abramo Bagnara <abramo@alsa-project.org>
 *   Copyright (c) 2002 by Steve Harris <steve@plugin.org.uk>
 *
-* Peppy ALSA Plugin is free software: you can redistribute it and/or 
-* modify it under the terms of the GNU General Public License as 
-* published by the Free Software Foundation, either version 3 of the 
+* Peppy ALSA Plugin is free software: you can redistribute it and/or
+* modify it under the terms of the GNU General Public License as
+* published by the Free Software Foundation, either version 3 of the
 * License, or (at your option) any later version.
-* 
+*
 * Peppy ALSA Plugin is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-* 
+*
 * You should have received a copy of the GNU General Public License
-* along with Peppy ALSA Plugin. If not, see 
+* along with Peppy ALSA Plugin. If not, see
 * <http://www.gnu.org/licenses/>.
 */
 

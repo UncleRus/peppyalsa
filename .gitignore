@@ -1,0 +1,14 @@
+src/.deps/
+.idea/
+build/
+autom4te.cache/
+Makefile.in
+aclocal.m4
+compile
+config.guess
+config.sub
+depcomp
+install-sh
+ltmain.sh
+m4/
+missing

@@ -1,4 +1,4 @@
-AC_INIT([pimeter], [0.44])
+AC_INIT([pimeter],[0.44])
 AC_CONFIG_SRCDIR([src/peppyalsa.c])
 AM_INIT_AUTOMAKE([subdir-objects])
 AC_CONFIG_MACRO_DIR([m4])
@@ -13,4 +13,5 @@ AC_CHECK_LIB([asound], [snd_pcm_open], , [AC_MSG_ERROR(You need libasound instal
 AC_CHECK_LIB([fftw3], [fftw_plan_dft_r2c_1d], , [AC_MSG_ERROR(You need libfftw3 installed)], )
 AC_CHECK_LIB([m], [log])
 
-AC_OUTPUT(Makefile)
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
